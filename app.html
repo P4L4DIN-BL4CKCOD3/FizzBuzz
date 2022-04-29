@@ -28,7 +28,7 @@
 <!--== NAV SECTION ==-->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand logoFont" href="index.html"><img src="img/favicon-32x32.png" class="d-inline-block align-text-top" alt="" width="30" height="30"> FizzBuzz</a>
+        <a class="navbar-brand" href="index.html"><img src="img/favicon-32x32.png" class="d-inline-block align-text-top" alt="" width="30" height="30"> FizzBuzz</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -60,30 +60,35 @@
     <div class="container mt-5">
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col col-lg-4 border-end border-2 border-secondary">
-                <h1 class="display-6 fw-bold lh-1 mb-3 logoFont text-light">FizzBuzz: A Coding Project</h1>
-                <h3 class="lead text-secondary">Live life one loop at a time. A javascript coding exercise using loops.
-                        Write a program that displays the numbers from <strong>0</strong> to <strong>100</strong>, highlighting even numbers in <strong>BOLD</strong>
+                <h1 class="display-6 lh-base mb-3">FizzBuzz: A Coding Project.</h1>
+                <h3 class="lead lh-base">When it counts you FizzBuzz. A javascript codeing exercise using loops. <hr>
+                    Write a program that prints the numbers from 1 to 100 and 
+                    for each multiples of '3' display <strong>"Fizz"</strong> instead of the number and for
+                    multiple of 5 display <strong>"Buzz"</strong>. 
+                    For multiples of both display <strong>"FizzBuzz"</strong>.
                 </h3>
-                <h2 class="mt-5 display-6 fw-bold lh-1 mb-3 logoFont text-light">Instructions</h2>
-                <p class="lead text-secondary">Enter a strarting value and a ending value. Press the button and the values will appear.</p>
+                <h2 class="mt-5 display-6 lh-base mb-3">Instructions</h2>
+                <p class="lead lh-base">Enter a Fizz and a Buzz. Press the button and the values will appear.</p>
             </div>
             <div class=" col col-lg-8">
                 <div>
-                    <h3 class="mt-1 display-9 fw-bold lh-1 mb-3 logoFont text-light">Enter Values</h3>
+                    <h2 class="mt-1 display-6 lh-base mb-3">Enter Values</h2>
                     <form class="row gy-2 gx-3">
                         <div class="col">
-                            <input id="startValue" type="number" class="form-control" placeholder="Start Value" value=0 aria-label="Start Value">
+                            <input id="fizzValue" type="number" class="form-control bg-dark text-secondary" 
+                            placeholder="Start Value" value=3 aria-label="Fizz Value">
                         </div>
                         <div class="col">
-                            <input id="endValue" type="number" class="form-control" placeholder="End Value" value=100 aria-label="End Value">
+                            <input id="buzzValue" type="number" class="form-control bg-dark text-secondary" 
+                            placeholder="End Value" value=5 aria-label="Buzz Value">
                         </div>
                         <div class="col-12 d-flex justify-content-end">
-                            <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Disply the Cipher</button>
+                            <button id="btnSubmit" type="button" class="btn btn-secondary btn-lg">Buzz it</button>
                         </div>
                     </form>
-                    <h2 class="mt-1 display-9 fw-bold lh-1 mb-3 logoFont text-light">Results</h2>
+                    <h2 class="mt-1 display-6 lh-base mb-3 border-bottom border-2 border-secondary">Results</h2>
                     <div class="table-responsive">
-                        <table class="table table-striped table-sm table-light">
+                        <table class="table table-striped table-sm table-secondary">
                             <tbody id="results">
                                 <!--Results Go Here-->
                             </tbody>
@@ -116,6 +121,17 @@
         </div>
     </div>
 </footer>
+
+<!--==TEMPLATE TAG ==-->
+<template id="fbTemplate">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</template>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
