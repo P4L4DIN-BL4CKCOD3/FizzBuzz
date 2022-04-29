@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #1d5888;
+    --secondary-color: #ff993b;
+    --dark-color: #292929;
+    --white-color: #dff3e4;
+    --logo-orange: #ff9738;
+}
+.odd{
+    font-weight: 100;
+}
+.even{
+    font-weight: bold;
+}
+body {
+    
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.logoFont {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+nav {
+    background-color:var(--dark-color);
+}
+footer{
+    background-color:var(--dark-color);
+}
+footer {
+    padding-right: 1rem;
+}
+footer .social>a {
+    color:var(--white-color);
+    opacity: 0.75;
+}
+footer .social>a:hover {
+    opacity: 0.90;
+    color:var(--primary-color) ;
+}
+h1,h2,h3,h4,h5,h6 {
+    color:var(--white-color);
+}
+.bsicon {
+    color: purple;
+}
+.jsicon {
+    color: rgb(226,211,4);
+}
+.html5icon{
+    color: orangered;
+}
+.cssicon {
+    color: rgb(11,82,214);
+}
+.checklist >li i {
+    color:var(--white-color);
+}
+code[class*="language-"],
+    pre[class*="language-"] {
+        white-space: pre-wrap;
+        word-break: break-all;
+        word-wrap: break-word;
+}
+.appheading {
+    color:var(--dark-color) ;
+}
+main>.container {
+    padding: 60px 15px 0;
+    margin-bottom: 5rem;
+}
+.sticky-footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+

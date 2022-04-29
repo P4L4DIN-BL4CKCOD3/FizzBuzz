@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>FizzBuzz: A Coding Project By P4L4DIN@BL4CKCOD3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/site.css">
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png">
+
+    <!--Google Fonts for Roboto & Roboto Condensed-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+</head>
+
+<body class="d-flex flex-column h-100">
+
+<!--== NAV SECTION ==-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand logoFont" href="index.html"><img src="img/favicon-32x32.png" class="d-inline-block align-text-top" alt="" width="30" height="30"> FizzBuzz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="app.html">The App</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="code.html">The Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/P4L4DIN-BL4CKCOD3/FizzBuzz">Git Repo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--== MAIN SECTION ==-->
+<main class="flex-shrink-0">
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col col-lg-4 border-end border-2 border-secondary">
+                <h1 class="display-6 fw-bold lh-1 mb-3 logoFont text-light">FizzBuzz: A Coding Project</h1>
+                <h3 class="lead text-secondary">Live life one loop at a time. A javascript coding exercise using loops.
+                        Write a program that displays the numbers from <strong>0</strong> to <strong>100</strong>, highlighting even numbers in <strong>BOLD</strong>
+                </h3>
+                <h2 class="mt-5 display-6 fw-bold lh-1 mb-3 logoFont text-light">Instructions</h2>
+                <p class="lead text-secondary">Enter a strarting value and a ending value. Press the button and the values will appear.</p>
+            </div>
+            <div class=" col col-lg-8">
+                <div>
+                    <h3 class="mt-1 display-9 fw-bold lh-1 mb-3 logoFont text-light">Enter Values</h3>
+                    <form class="row gy-2 gx-3">
+                        <div class="col">
+                            <input id="startValue" type="number" class="form-control" placeholder="Start Value" value=0 aria-label="Start Value">
+                        </div>
+                        <div class="col">
+                            <input id="endValue" type="number" class="form-control" placeholder="End Value" value=100 aria-label="End Value">
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Disply the Cipher</button>
+                        </div>
+                    </form>
+                    <h2 class="mt-1 display-9 fw-bold lh-1 mb-3 logoFont text-light">Results</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-sm table-light">
+                            <tbody id="results">
+                                <!--Results Go Here-->
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--== FOOTER SECTION ==-->
+<footer class="footer mt-auto py-3">
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-lg-3 gy-2">
+            <div class="col order-last order-lg-first text-light">
+                <div><span class="text-muted">&copy;2022</span> BL4CKCOD3 | p4l4din@bl4ckcod3.com</div>
+            </div>
+            <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
+                <img src="/img/White logo - no background.png" alt="P4L4DIN-BL4CKCOD3 logo" height="30">
+            </div>
+            <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
+                <div class="row">
+                    <div class="col social"><a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></div>
+                    <div class="col social"><a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></div>
+                    <div class="col social"><a href="https://github.com/P4L4DIN-BL4CKCOD3/FizzBuzz" target="_blank"><i class="fab fa-github fa-2x"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+</script>
+<script src="/js/site.js"></script>
+<script>
+    document.getElementById("btnSubmit").addEventListener("click",getValues);
+</script>
+
+</body>
+</html>
